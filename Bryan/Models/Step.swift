@@ -10,10 +10,10 @@ import UIKit
 
 class Step: NSObject {
     var id: Int
-    var description: String
+    var instruction: String
     
-    init(id: Int, description: String) {
+    init(id: Int, instruction: String) {
         self.id = id
-        self.description = description
+        self.instruction = instruction
     }
 }
