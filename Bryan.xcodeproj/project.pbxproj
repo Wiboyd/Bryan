@@ -14,6 +14,9 @@
 		514738291F9211E9006BA13C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 514738271F9211E9006BA13C /* LaunchScreen.storyboard */; };
 		514738341F9211E9006BA13C /* BryanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514738331F9211E9006BA13C /* BryanTests.swift */; };
 		5147383F1F9211E9006BA13C /* BryanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5147383E1F9211E9006BA13C /* BryanUITests.swift */; };
+		514738501F921282006BA13C /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5147384F1F921282006BA13C /* Ingredient.swift */; };
+		514738521F921350006BA13C /* Recipee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514738511F921350006BA13C /* Recipee.swift */; };
+		514738541F921396006BA13C /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514738531F921396006BA13C /* Step.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		5147383A1F9211E9006BA13C /* BryanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BryanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5147383E1F9211E9006BA13C /* BryanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BryanUITests.swift; sourceTree = "<group>"; };
 		514738401F9211E9006BA13C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5147384F1F921282006BA13C /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		514738511F921350006BA13C /* Recipee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipee.swift; sourceTree = "<group>"; };
+		514738531F921396006BA13C /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,10 @@
 		5147381D1F9211E9006BA13C /* Bryan */ = {
 			isa = PBXGroup;
 			children = (
+				5147384E1F921267006BA13C /* Views */,
+				5147384D1F921264006BA13C /* Controllers */,
+				5147384C1F921261006BA13C /* Models */,
 				5147381E1F9211E9006BA13C /* AppDelegate.swift */,
-				514738201F9211E9006BA13C /* ViewController.swift */,
 				514738221F9211E9006BA13C /* Main.storyboard */,
 				514738251F9211E9006BA13C /* Assets.xcassets */,
 				514738271F9211E9006BA13C /* LaunchScreen.storyboard */,
@@ -123,6 +131,31 @@
 				514738401F9211E9006BA13C /* Info.plist */,
 			);
 			path = BryanUITests;
+			sourceTree = "<group>";
+		};
+		5147384C1F921261006BA13C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5147384F1F921282006BA13C /* Ingredient.swift */,
+				514738511F921350006BA13C /* Recipee.swift */,
+				514738531F921396006BA13C /* Step.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5147384D1F921264006BA13C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				514738201F9211E9006BA13C /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5147384E1F921267006BA13C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				514738211F9211E9006BA13C /* ViewController.swift in Sources */,
+				514738521F921350006BA13C /* Recipee.swift in Sources */,
+				514738541F921396006BA13C /* Step.swift in Sources */,
 				5147381F1F9211E9006BA13C /* AppDelegate.swift in Sources */,
+				514738501F921282006BA13C /* Ingredient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
