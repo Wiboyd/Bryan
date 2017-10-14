@@ -170,7 +170,7 @@
         <!--New Step-->
         <scene sceneID="DTU-nK-ltj">
             <objects>
-                <viewController id="QwH-97-Yor" sceneMemberID="viewController">
+                <viewController id="QwH-97-Yor" customClass="NewStepViewController" customModule="Bryan" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ng3-Wh-me8"/>
                         <viewControllerLayoutGuide type="bottom" id="Kbg-Fb-pTS"/>
@@ -185,6 +185,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="QwH-97-Yor" id="vZb-k8-4dq"/>
+                                </connections>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJI-AY-b2K">
                                 <rect key="frame" x="90" y="600" width="195" height="30"/>
@@ -203,6 +206,9 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="stepTextView" destination="Vri-Dt-LXy" id="azX-fI-sAf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jXh-VU-cKQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
