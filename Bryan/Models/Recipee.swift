@@ -9,14 +9,12 @@
 import UIKit
 
 class Recipee: NSObject {
-    var id: Int
     var name: String
     
     var ingredients: [Ingredient]
     var steps: [Step]
     
-    init(id: Int, name: String, ingredients: [Ingredient], steps: [Step]) {
-        self.id = id
+    init(name: String, ingredients: [Ingredient], steps: [Step]) {
         self.name = name
         self.ingredients = ingredients
         self.steps = steps

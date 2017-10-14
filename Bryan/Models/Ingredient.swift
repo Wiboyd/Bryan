@@ -9,11 +9,9 @@
 import UIKit
 
 class Ingredient: NSObject {
-    var id: Int
     var name: String
     
-    init(id: Int, name: String) {
-        self.id = id
+    init(name: String) {
         self.name = name
         super.init()
     }

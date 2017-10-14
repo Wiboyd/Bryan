@@ -9,11 +9,9 @@
 import UIKit
 
 class Step: NSObject {
-    var id: Int
     var instruction: String
     
-    init(id: Int, instruction: String) {
-        self.id = id
+    init(instruction: String) {
         self.instruction = instruction
     }
 }
