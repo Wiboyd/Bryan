@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+    override func viewDidLoad() {
+        print(RECIPEE.steps[0].getInstruction())
+        print(RECIPEE.steps[1].getInstruction())
+    }
 }
 

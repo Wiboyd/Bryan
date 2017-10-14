@@ -11,12 +11,10 @@ import UIKit
 class Recipee: NSObject {
     var name: String
     
-    var ingredients: [Ingredient]
     var steps: [Step]
     
-    init(name: String, ingredients: [Ingredient], steps: [Step]) {
+    init(name: String, steps: [Step]) {
         self.name = name
-        self.ingredients = ingredients
         self.steps = steps
         super.init()
     }
