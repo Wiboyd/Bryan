@@ -16,6 +16,7 @@
 		514738501F921282006BA13C /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5147384F1F921282006BA13C /* Ingredient.swift */; };
 		514738521F921350006BA13C /* Recipee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514738511F921350006BA13C /* Recipee.swift */; };
 		514738541F921396006BA13C /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514738531F921396006BA13C /* Step.swift */; };
+		514738561F921753006BA13C /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514738551F921753006BA13C /* Amount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		5147384F1F921282006BA13C /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		514738511F921350006BA13C /* Recipee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipee.swift; sourceTree = "<group>"; };
 		514738531F921396006BA13C /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		514738551F921753006BA13C /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				5147384F1F921282006BA13C /* Ingredient.swift */,
+				514738551F921753006BA13C /* Amount.swift */,
 				514738511F921350006BA13C /* Recipee.swift */,
 				514738531F921396006BA13C /* Step.swift */,
 			);
@@ -290,6 +293,7 @@
 				514738541F921396006BA13C /* Step.swift in Sources */,
 				5147381F1F9211E9006BA13C /* AppDelegate.swift in Sources */,
 				514738501F921282006BA13C /* Ingredient.swift in Sources */,
+				514738561F921753006BA13C /* Amount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

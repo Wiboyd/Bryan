@@ -11,6 +11,8 @@ import UIKit
 class Ingredient: NSObject {
     var name: String
     
+    var amount: Amount?
+    
     init(name: String) {
         self.name = name
         super.init()
