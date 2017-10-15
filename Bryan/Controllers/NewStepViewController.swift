@@ -12,6 +12,11 @@ class NewStepViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet var stepTextView: UITextView!
     
+    var recipeeViewController: NewRecipeeViewController!
+    
+    var step: Step!
+    
+    
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if (text == "") {
             if ((self.stepTextView.text as NSString).substring(with: range) == "]") {

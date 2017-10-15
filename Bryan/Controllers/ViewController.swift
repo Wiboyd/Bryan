@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     override func viewDidLoad() {
+        STEPS[0].recipee = RECIPEE
+        STEPS[1].recipee = RECIPEE
+        
         print(RECIPEE.steps[0].getInstruction())
         print(RECIPEE.steps[1].getInstruction())
     }

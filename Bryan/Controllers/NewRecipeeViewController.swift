@@ -9,5 +9,10 @@
 import UIKit
 
 class NewRecipeeViewController: UIViewController {
-
+    var recipee = Recipee(name: "", steps: [])
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        (segue.destination as! NewStepViewController).recipeeViewController = self
+        (segue.destination as! NewStepViewController).step = Step(instruction: "")
+    }
 }

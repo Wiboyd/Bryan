@@ -13,9 +13,12 @@ class Recipee: NSObject {
     
     var steps: [Step]
     
-    init(name: String, steps: [Step]) {
+    var ingredients: [Int: Amount]
+    
+    init(name: String, steps: [Step], ingredients: [Int: Amount] = [:]) {
         self.name = name
         self.steps = steps
+        self.ingredients = ingredients
         super.init()
     }
 }
