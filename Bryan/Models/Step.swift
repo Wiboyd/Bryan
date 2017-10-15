@@ -11,8 +11,12 @@ import UIKit
 class Step: NSObject {
     private var instruction: String
     
-    init(instruction: String) {
+    var ingredients: [Amount]
+    
+    init(instruction: String, ingredients: [Amount] = []) {
         self.instruction = instruction
+        self.ingredients = ingredients
+        super.init()
     }
     
     func getInstruction() -> String {
@@ -26,7 +30,7 @@ class Step: NSObject {
                 break
             case "]":
                 isInMarkup = false
-                output += AMOUNTS[Int(id)!].getDescriptionWithAmount()
+                output += self.ingredients[Int(id)!].getDescriptionWithAmount()
                 id = ""
                 break
             default:
